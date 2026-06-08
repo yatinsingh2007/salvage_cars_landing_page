@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Sell Salvage - Premium Salvage Vehicle Marketplace</title>
+  <meta name="description" content="Where value gets a second life. Browse, bid, and buy rebuildable salvage cars, clean title trade-ins, and high-value project vehicles on our premium marketplace.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- styles.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND DECORATIONS -->
+  <div class="bg-decorations">
+    <div class="decor-circle decor-circle-1"></div>
+    <div class="decor-circle decor-circle-2"></div>
+    <div class="decor-grid"></div>
+  </div>
+
+  <!-- 1. STICKY NAVIGATION BAR -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" id="header-logo-link">
+        <svg class="logo-icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Logo Outer Circle segment -->
+          <path d="M12 70 C -4 45, 15 15, 50 12 C 72 10, 88 22, 94 40" stroke="#0D2B54" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <path d="M94 40 C 97 50, 95 62, 85 75 C 70 95, 35 94, 25 84" stroke="#0F7F4D" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <!-- Split Car Silhouette inside Logo -->
+          <!-- Left half of car: Navy -->
+          <path d="M50 25 C45 25, 32 28, 28 35 C25 40, 22 46, 24 54 C25 58, 28 62, 35 62 C40 62, 45 61, 50 60 Z" fill="#0D2B54"/>
+          <!-- Right half of car: Green -->
+          <path d="M50 25 C55 25, 68 28, 72 35 C75 40, 78 46, 76 54 C75 58, 72 62, 65 62 C60 62, 55 61, 50 60 Z" fill="#0F7F4D"/>
+          <!-- Crack/Lightning Bolt Division (White separator) -->
+          <path d="M52 22 L47 40 L53 44 L48 64" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="logo-text-wrapper">
+          <span class="logo-text-top">WE SELL</span>
+          <span class="logo-text-bottom">SALVAGE</span>
+          <div class="logo-slogan">WHERE <span>VALUE</span> GETS A <span>SECOND LIFE</span></div>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#auctions" class="nav-link" id="nav-auctions-link">Live Auctions</a></li>
+          <li><a href="#how-it-works" class="nav-link" id="nav-how-link">How It Works</a></li>
+          <li><a href="#listings" class="nav-link" id="nav-listings-link">Featured Vehicles</a></li>
+          <li><a href="#why-choose-us" class="nav-link" id="nav-why-link">Why Choose Us</a></li>
+          <li><a href="#testimonials" class="nav-link" id="nav-reviews-link">Testimonials</a></li>
+        </ul>
+      </nav>
+
+      <!-- Primary CTA button -->
+      <div>
+        <a href="#register" class="btn btn-primary btn-sm" id="nav-cta-btn">Start Bidding</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Hero Content (Left side) -->
+      <div class="hero-content animate-slide-up">
+        <div class="hero-tag">
+          <span class="badge badge-green">Premium Salvage Marketplace</span>
+        </div>
+        <h1 class="hero-title">
+          Where Value Gets A <br>
+          <span class="accent-text gradient-text">Second Life</span>
+        </h1>
+        <p class="hero-description">
+          Gain direct wholesale access to thousands of rebuildable cars, clean title trade-ins, and salvage vehicles. Seamless digital auctions, certified logistics, and bidding transparently.
+        </p>
+        <div class="hero-actions">
+          <a href="#listings" class="btn btn-green" id="hero-primary-cta">Explore Live Inventory</a>
+          <a href="#how-it-works" class="btn btn-secondary" id="hero-secondary-cta">How Bidding Works</a>
+        </div>
+        
+        <!-- Trust indicators -->
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <div class="trust-text">
+              100% Verified Listings
+              <span>Detailed inspection reports</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            <div class="trust-text">
+              Secure Transactions
+              <span>Escrow backed payment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Showcase Box (Right side) -->
+      <div class="hero-showcase animate-slide-up delay-2">
+        <div class="showcase-wrapper">
+          <div class="showcase-header">
+            <span class="badge badge-navy">Lot #489021A</span>
+            <span class="live-badge">Live Bidding</span>
+          </div>
+
+          <!-- Split Car Graphics Presentation representing Rebuildable Salvage -->
+          <div class="showcase-car-split">
+            <svg class="split-car-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Left side clipping (Salvage Blueprint Wireframe) -->
+              <g>
+                <!-- Navy Wireframe Grids -->
+                <line x1="20" y1="120" x2="200" y2="120" stroke="rgba(13, 43, 84, 0.15)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="100" y1="30" x2="100" y2="210" stroke="rgba(13, 43, 84, 0.15)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="50" y1="60" x2="180" y2="190" stroke="rgba(13, 43, 84, 0.1)" stroke-width="1" stroke-dasharray="4 4"/>
+
+                <!-- Left half outline -->
+                <path d="M200 45 C150 45, 100 50, 85 70 C70 90, 50 110, 42 135 C38 150, 48 165, 65 165 C85 165, 100 162, 120 168 C130 171, 150 178, 200 178" stroke="#0D2B54" stroke-width="3" stroke-dasharray="1 1" fill="none"/>
+                
+                <!-- Left Wheel (Slightly misaligned wireframe style to show damage/project state) -->
+                <circle cx="85" cy="165" r="32" stroke="#0D2B54" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+                <circle cx="85" cy="165" r="14" stroke="#0D2B54" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+                
+                <!-- Left Windshield & Window Blueprint -->
+                <path d="M200 65 C170 65, 155 70, 145 85 C140 95, 142 115, 142 115 H200" stroke="#0D2B54" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+                <path d="M142 115 C125 115, 105 115, 95 125 C92 128, 90 135, 95 135 H200" stroke="#0D2B54" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+                
+                <!-- Damaged area visual markers (fractured shapes) -->
+                <path d="M38 120 L28 135 L40 148 L48 140 Z" fill="rgba(13, 43, 84, 0.08)" stroke="#0D2B54" stroke-width="1"/>
+                <path d="M60 115 L52 122 L68 128" stroke="#0D2B54" stroke-width="1.5"/>
+              </g>
+
+              <!-- Right side clipping (Restored Glossy Green Sports Car) -->
+              <g>
+                <!-- Solid Green Background Silhouette on the Right Side -->
+                <path d="M200 45 C250 45, 300 50, 315 70 C330 90, 350 110, 358 135 C362 150, 352 165, 335 165 C315 165, 300 162, 280 168 C270 171, 250 178, 200 178 Z" fill="rgba(15, 127, 77, 0.05)"/>
+                
+                <!-- Right half Outline and Body lines -->
+                <path d="M200 45 C250 45, 300 50, 315 70 C330 90, 350 110, 358 135 C362 150, 352 165, 335 165 C315 165, 300 162, 280 168 C270 171, 250 178, 200 178" stroke="#0F7F4D" stroke-width="3" fill="none"/>
+                
+                <!-- Right Wheel (Clean, glossy, bold) -->
+                <circle cx="315" cy="165" r="32" fill="#0D2B54"/>
+                <circle cx="315" cy="165" r="28" fill="#1E293B"/>
+                <!-- Multi-spoke alloy wheels -->
+                <circle cx="315" cy="165" r="16" fill="#0F7F4D"/>
+                <circle cx="315" cy="165" r="8" fill="#FFFFFF"/>
+                <path d="M315 133 L315 197 M283 165 H347 M292 142 L338 188 M292 188 L338 142" stroke="rgba(255, 255, 255, 0.4)" stroke-width="2"/>
+                
+                <!-- Right Windshield & Window -->
+                <path d="M200 65 C230 65, 245 70, 255 85 C260 95, 258 115, 258 115 H200 Z" fill="rgba(13, 43, 84, 0.8)" stroke="#0F7F4D" stroke-width="1.5"/>
+                <path d="M258 115 C275 115, 295 115, 305 125 C308 128, 310 135, 305 135 H200 Z" fill="rgba(13, 43, 84, 0.6)" stroke="#0F7F4D" stroke-width="1.5"/>
+                
+                <!-- Highlight aerodynamic curves -->
+                <path d="M220 128 C260 128, 290 132, 332 145" stroke="#16A365" stroke-width="2" stroke-linecap="round"/>
+                <path d="M210 148 C250 148, 280 152, 300 158" stroke="#16A365" stroke-width="1" stroke-linecap="round"/>
+              </g>
+
+              <!-- Central Jagged Lightning/Energy division representing transformation -->
+              <path d="M203 35 L195 90 L208 115 L192 155 L204 195" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M203 35 L195 90 L208 115 L192 155 L204 195" stroke="#16A365" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <!-- Neon/Glow energy indicators -->
+              <circle cx="195" cy="90" r="4" fill="#FFFFFF" style="filter: drop-shadow(0 0 6px #16A365);"/>
+              <circle cx="192" cy="155" r="4" fill="#FFFFFF" style="filter: drop-shadow(0 0 6px #16A365);"/>
+            </svg>
+
+            <!-- Floating stats cards -->
+            <div class="floating-stats-card floating-card-left">
+              <div class="floating-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <div class="floating-card-info">
+                <p>Damage Profile</p>
+                <h4>Front End Damage</h4>
+              </div>
+            </div>
+
+            <div class="floating-stats-card floating-card-right">
+              <div class="floating-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <div class="floating-card-info">
+                <p>Est. Retail Value</p>
+                <h4>$54,200 USD</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-footer">
+            <div class="showcase-details">
+              <h3>2022 Porsche Cayman S</h3>
+              <p>Odometer: 14,820 mi • Title: Rebuildable</p>
+            </div>
+            <div class="showcase-bid">
+              <span>Current Bid</span>
+              <h3>$18,400</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. STATISTICS SECTION -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        
+        <!-- Stat Card 1 -->
+        <div class="stat-card" id="stat-listed">
+          <div>
+            <div class="stat-number">
+              12,450<span class="stat-number-green">+</span>
+            </div>
+            <div class="stat-label">Vehicles Currently Listed for Auction</div>
+          </div>
+          <!-- Background SVG pattern -->
+          <svg class="stat-icon-bg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <rect x="9" y="9" width="6" height="6"/>
+          </svg>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div class="stat-card" id="stat-auctions">
+          <div>
+            <div class="stat-number">
+              142K<span class="stat-number-green">+</span>
+            </div>
+            <div class="stat-label">Successful Auctions Completed</div>
+          </div>
+          <svg class="stat-icon-bg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+        </div>
+
+        <!-- Stat Card 3 -->
+        <div class="stat-card" id="stat-buyers">
+          <div>
+            <div class="stat-number">
+              85,000<span class="stat-number-green">+</span>
+            </div>
+            <div class="stat-label">Registered Active Buyers Worldwide</div>
+          </div>
+          <svg class="stat-icon-bg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+
+        <!-- Stat Card 4 -->
+        <div class="stat-card" id="stat-countries">
+          <div>
+            <div class="stat-number">
+              115<span class="stat-number-green">+</span>
+            </div>
+            <div class="stat-label">Countries Served with Secure Shipping</div>
+          </div>
+          <svg class="stat-icon-bg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. HOW IT WORKS -->
+  <section class="section-padding bg-white" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge badge-green">Simple 4-Step Process</span>
+        <h2 class="section-title">How To Buy Your Salvage Car</h2>
+        <p>Our completely digital auction environment gives you the tools to bid confidently, verify specs, and arrange seamless logistics.</p>
+      </div>
+
+      <div class="how-grid">
+        <!-- Connecting Line -->
+        <div class="how-connector-line"></div>
+
+        <!-- Step 1 -->
+        <div class="how-card" id="step-register">
+          <div class="how-step-num">01</div>
+          <div class="how-icon-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <polyline points="16 11 18 13 22 9"/>
+            </svg>
+          </div>
+          <h3>Create Account</h3>
+          <p>Register in minutes, verify your bidder identity, and configure your bidding capacity with ease.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="how-card" id="step-find">
+          <div class="how-step-num">02</div>
+          <div class="how-icon-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/>
+              <line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+          <h3>Find Vehicles</h3>
+          <p>Browse our extensive database of rebuildables with filter parameters for title type, damage, and run-and-drive status.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="how-card" id="step-bid">
+          <div class="how-step-num">03</div>
+          <div class="how-icon-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"/>
+              <polyline points="5 12 12 5 19 12"/>
+            </svg>
+          </div>
+          <h3>Place Bids</h3>
+          <p>Bid in real-time or set your maximum automated bid limit. Check out with instant Buy-It-Now offers on select lots.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="how-card" id="step-deliver">
+          <div class="how-step-num">04</div>
+          <div class="how-icon-container">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13"/>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Secure Logistics</h3>
+          <p>Arrange quick transit through our automated global shipping partners straight from the salvage yard to your garage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED VEHICLES -->
+  <section class="section-padding" id="listings">
+    <div class="container">
+      <div class="vehicles-filter-bar">
+        <div>
+          <span class="badge badge-navy">Active Auctions</span>
+          <h2 class="section-title" style="margin-bottom: 0;">Featured Rebuildable Stock</h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" id="tab-all">All Vehicles</button>
+          <button class="filter-tab" id="tab-sports">Sports Coupes</button>
+          <button class="filter-tab" id="tab-suvs">SUVs & Trucks</button>
+          <button class="filter-tab" id="tab-electric">Electric/Hybrid</button>
+        </div>
+      </div>
+
+      <div class="vehicles-grid">
+        <!-- Vehicle Card 1 -->
+        <div class="vehicle-card" id="vehicle-lot-1">
+          <div class="vehicle-image-wrapper">
+            <div class="vehicle-badge-overlay">
+              <span class="badge badge-green">Pure Salvage</span>
+            </div>
+            <button class="vehicle-wishlist-btn" title="Add to Watchlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+            <div class="vehicle-image-placeholder">
+              <!-- Inline custom vector representation of vehicle 1 (Audi RS e-tron) -->
+              <svg width="100%" height="100%" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="180" fill="#F1F5F9"/>
+                <!-- Car body path -->
+                <path d="M60 110 C80 95, 120 70, 160 70 C200 70, 240 92, 260 110 H60 Z" fill="#0D2B54" opacity="0.8"/>
+                <path d="M40 120 C50 120, 260 120, 270 120 C280 120, 285 130, 280 140 C270 150, 250 152, 230 152 H70 C50 152, 30 145, 30 135 C30 125, 35 120, 40 120 Z" fill="#0D2B54"/>
+                <!-- Windows -->
+                <path d="M120 78 C130 78, 160 78, 175 78 C185 78, 195 85, 200 95 H110 C110 85, 115 78, 120 78 Z" fill="#FFFFFF" opacity="0.7"/>
+                <!-- Wheels -->
+                <circle cx="85" cy="142" r="24" fill="#071C38"/>
+                <circle cx="85" cy="142" r="12" fill="#E2E8F0"/>
+                <circle cx="225" cy="142" r="24" fill="#071C38"/>
+                <circle cx="225" cy="142" r="12" fill="#E2E8F0"/>
+                <!-- Lights -->
+                <path d="M265 124 L275 126 L272 132 Z" fill="#EF4444"/>
+                <path d="M35 126 L45 124 L48 130 Z" fill="#FBBF24"/>
+                <text x="150" y="35" text-anchor="middle" fill="#94A3B8" font-size="12" font-family="sans-serif" font-weight="700">IMAGE REPRESENTATION</text>
+              </svg>
+            </div>
+          </div>
+          <div class="vehicle-content">
+            <div class="vehicle-title-row">
+              <h3 class="vehicle-title">Audi RS e-tron GT</h3>
+              <span class="vehicle-year">2022</span>
+            </div>
+            
+            <div class="vehicle-specs">
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+                <span>Damage: Front End</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+                <span>Title: Rebuildable</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Odometer: 18,340 mi</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+                <span>Keys: Present</span>
+              </div>
+            </div>
+
+            <div class="vehicle-bid-row">
+              <div class="bid-info">
+                <span>Current Bid</span>
+                <span class="bid-price">$24,800 USD</span>
+              </div>
+              <div class="timer-info">
+                <span>Time Left</span>
+                <span class="timer-countdown"><span class="timer-dot"></span>03h 42m</span>
+              </div>
+            </div>
+
+            <div class="vehicle-actions">
+              <a href="#bid" class="btn btn-primary btn-sm" id="bid-btn-1">Place Bid</a>
+              <a href="#details" class="btn btn-secondary btn-sm" id="details-btn-1">Watch</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle Card 2 -->
+        <div class="vehicle-card" id="vehicle-lot-2">
+          <div class="vehicle-image-wrapper">
+            <div class="vehicle-badge-overlay">
+              <span class="badge badge-green">Rebuildable Salvage</span>
+            </div>
+            <button class="vehicle-wishlist-btn" title="Add to Watchlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+            <div class="vehicle-image-placeholder">
+              <!-- Inline custom vector representation of vehicle 2 (Porsche 911) -->
+              <svg width="100%" height="100%" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="180" fill="#F1F5F9"/>
+                <!-- Car body path -->
+                <path d="M50 115 C70 95, 110 65, 160 65 C210 65, 245 92, 265 115 H50 Z" fill="#0F7F4D" opacity="0.8"/>
+                <path d="M35 125 C45 125, 265 125, 275 125 C285 125, 290 132, 285 142 C275 152, 255 155, 235 155 H65 C45 155, 25 148, 25 138 C25 128, 30 125, 35 125 Z" fill="#0F7F4D"/>
+                <!-- Windows -->
+                <path d="M115 74 C125 74, 155 74, 170 74 C180 74, 190 82, 195 92 H105 C105 82, 110 74, 115 74 Z" fill="#FFFFFF" opacity="0.7"/>
+                <!-- Wheels -->
+                <circle cx="80" cy="144" r="22" fill="#071C38"/>
+                <circle cx="80" cy="144" r="10" fill="#E2E8F0"/>
+                <circle cx="220" cy="144" r="22" fill="#071C38"/>
+                <circle cx="220" cy="144" r="10" fill="#E2E8F0"/>
+                <!-- Lights -->
+                <path d="M270 129 L278 131 L276 136 Z" fill="#EF4444"/>
+                <path d="M30 131 L38 129 L41 134 Z" fill="#FBBF24"/>
+                <text x="150" y="35" text-anchor="middle" fill="#94A3B8" font-size="12" font-family="sans-serif" font-weight="700">IMAGE REPRESENTATION</text>
+              </svg>
+            </div>
+          </div>
+          <div class="vehicle-content">
+            <div class="vehicle-title-row">
+              <h3 class="vehicle-title">Porsche 911 Carrera S</h3>
+              <span class="vehicle-year">2021</span>
+            </div>
+            
+            <div class="vehicle-specs">
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+                <span>Damage: Rear Collision</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+                <span>Title: Salvage Title</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Odometer: 9,210 mi</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+                <span>Keys: Present</span>
+              </div>
+            </div>
+
+            <div class="vehicle-bid-row">
+              <div class="bid-info">
+                <span>Current Bid</span>
+                <span class="bid-price">$38,200 USD</span>
+              </div>
+              <div class="timer-info">
+                <span>Time Left</span>
+                <span class="timer-countdown"><span class="timer-dot"></span>01h 14m</span>
+              </div>
+            </div>
+
+            <div class="vehicle-actions">
+              <a href="#bid" class="btn btn-primary btn-sm" id="bid-btn-2">Place Bid</a>
+              <a href="#details" class="btn btn-secondary btn-sm" id="details-btn-2">Watch</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle Card 3 -->
+        <div class="vehicle-card" id="vehicle-lot-3">
+          <div class="vehicle-image-wrapper">
+            <div class="vehicle-badge-overlay">
+              <span class="badge badge-navy">Minor Dents</span>
+            </div>
+            <button class="vehicle-wishlist-btn" title="Add to Watchlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+            <div class="vehicle-image-placeholder">
+              <!-- Inline custom vector representation of vehicle 3 (Jeep Wrangler) -->
+              <svg width="100%" height="100%" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="180" fill="#F1F5F9"/>
+                <!-- SUV Boxy Body -->
+                <path d="M60 80 H170 L210 115 H255 V145 H60 Z" fill="#0D2B54"/>
+                <!-- Roof Cabin -->
+                <path d="M70 80 L90 55 H160 V80 Z" fill="#FFFFFF" opacity="0.6"/>
+                <!-- Wheels -->
+                <circle cx="95" cy="140" r="26" fill="#071C38"/>
+                <circle cx="95" cy="140" r="14" fill="#E2E8F0"/>
+                <circle cx="215" cy="140" r="26" fill="#071C38"/>
+                <circle cx="215" cy="140" r="14" fill="#E2E8F0"/>
+                <text x="150" y="35" text-anchor="middle" fill="#94A3B8" font-size="12" font-family="sans-serif" font-weight="700">IMAGE REPRESENTATION</text>
+              </svg>
+            </div>
+          </div>
+          <div class="vehicle-content">
+            <div class="vehicle-title-row">
+              <h3 class="vehicle-title">Ford Bronco Raptor</h3>
+              <span class="vehicle-year">2022</span>
+            </div>
+            
+            <div class="vehicle-specs">
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+                <span>Damage: Minor Dents</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+                <span>Title: Clean Title</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Odometer: 24,150 mi</span>
+              </div>
+              <div class="spec-item">
+                <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+                <span>Keys: Present</span>
+              </div>
+            </div>
+
+            <div class="vehicle-bid-row">
+              <div class="bid-info">
+                <span>Current Bid</span>
+                <span class="bid-price">$19,500 USD</span>
+              </div>
+              <div class="timer-info">
+                <span>Time Left</span>
+                <span class="timer-countdown"><span class="timer-dot"></span>06h 19m</span>
+              </div>
+            </div>
+
+            <div class="vehicle-actions">
+              <a href="#bid" class="btn btn-primary btn-sm" id="bid-btn-3">Place Bid</a>
+              <a href="#details" class="btn btn-secondary btn-sm" id="details-btn-3">Watch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHY CHOOSE US -->
+  <section class="section-padding bg-white" id="why-choose-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge badge-navy">Marketplace Security</span>
+        <h2 class="section-title">Why Rebuilders Trust Us</h2>
+        <p>We combine automotive industry professionalism with top-tier technology to deliver a secure, transparent, and seamless bidding lifecycle.</p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card" id="why-verified">
+          <div class="why-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>100% Verified Listings</h3>
+          <p>Every vehicle listed features comprehensive diagnostic reports, multi-angle HD photos, and certified odometer readings.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card" id="why-transparent">
+          <div class="why-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Transparent Auctions</h3>
+          <p>No hidden seller buy-back conditions or ghost bids. View full, auditable real-time bidding histories instantly.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card" id="why-shipping">
+          <div class="why-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13"/>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Global Logistics</h3>
+          <p>Get instant shipping quotes at checkout. Track transport progress door-to-door, including international customs processing.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card" id="why-secure">
+          <div class="why-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3>Secure Escrow System</h3>
+          <p>Payments are held securely in escrow. Funds are only released to yards once titles and vehicles are transferred.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="why-card" id="why-dealer">
+          <div class="why-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3>Wholesale Dealer Network</h3>
+          <p>Unlock insurance company direct inventory, clean lease returns, and dealer-only salvage blocks with no dealer license needed.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="why-card" id="why-support">
+          <div class="why-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3>24/7 Dedicated Support</h3>
+          <p>A professional account manager helps guide you from your very first registration step right through to freight pickup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. TESTIMONIALS & TRUST -->
+  <section class="section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge badge-green">Success Stories</span>
+        <h2 class="section-title">What Rebuild Specialists Say</h2>
+        <p>Read from independent mechanics, professional auto yards, and project builders scaling businesses using our platform.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <!-- Card 1 -->
+        <div class="testimonial-card" id="testimonial-1">
+          <svg class="quote-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/>
+          </svg>
+          <div>
+            <div class="testimonial-stars">
+              <!-- Star SVGs -->
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "We've sourced over 45 rebuildable sports cars through this platform. The verified damage profiles are extremely accurate. It's completely removed the guesswork from salvage bidding."
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-avatar">MR</div>
+            <div class="user-info">
+              <h4>Marcus Vance</h4>
+              <p>Owner, Vance Restorations</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card" id="testimonial-2">
+          <svg class="quote-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/>
+          </svg>
+          <div>
+            <div class="testimonial-stars">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "The checkout to delivery path is incredible. Getting integrated freight rates immediately and door-to-door tracking for global transport has doubled our shop's turnaround capacity."
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-avatar user-avatar-green">HL</div>
+            <div class="user-info">
+              <h4>Helena Laine</h4>
+              <p>Director, Euro Export Logistics</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card" id="testimonial-3">
+          <svg class="quote-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/>
+          </svg>
+          <div>
+            <div class="testimonial-stars">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "As a private hobbyist, I was nervous about dealer-only restrictions. Using We Sell Salvage gave me wholesale access to find my dream project Bronco. Escrow security made payment easy!"
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <div class="user-avatar">KD</div>
+            <div class="user-info">
+              <h4>Kenji Dubois</h4>
+              <p>Hobbyist & Custom Builder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FINAL CALL TO ACTION -->
+  <section class="cta-section" id="register">
+    <div class="container">
+      <div class="cta-wrapper">
+        <div class="cta-decorations">
+          <div class="cta-decor-circle cta-decor-1"></div>
+          <div class="cta-decor-circle cta-decor-2"></div>
+        </div>
+        <div class="cta-content">
+          <h2 class="cta-title">Unlock Second-Life Value Today</h2>
+          <p class="cta-description">
+            Register your active bidding account now. Gain direct access to premium salvage yards, lease returns, and clean-title vehicle liquidations.
+          </p>
+          <div class="cta-actions">
+            <a href="#signup" class="btn btn-primary" id="cta-btn-primary">Register To Bid</a>
+            <a href="#listings" class="btn btn-secondary" id="cta-btn-secondary">Browse All Stock</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Footer Column 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo footer-logo">
+            <svg class="logo-icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 70 C -4 45, 15 15, 50 12 C 72 10, 88 22, 94 40" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="M94 40 C 97 50, 95 62, 85 75 C 70 95, 35 94, 25 84" stroke="#16A365" stroke-width="5" stroke-linecap="round" fill="none"/>
+              <path d="M50 25 C45 25, 32 28, 28 35 C25 40, 22 46, 24 54 C25 58, 28 62, 35 62 C40 62, 45 61, 50 60 Z" fill="#FFFFFF"/>
+              <path d="M50 25 C55 25, 68 28, 72 35 C75 40, 78 46, 76 54 C75 58, 72 62, 65 62 C60 62, 55 61, 50 60 Z" fill="#16A365"/>
+              <path d="M52 22 L47 40 L53 44 L48 64" stroke="#0D2B54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="logo-text-wrapper">
+              <span class="logo-text-top">WE SELL</span>
+              <span class="logo-text-bottom">SALVAGE</span>
+              <div class="logo-slogan">WHERE <span>VALUE</span> GETS A <span>SECOND LIFE</span></div>
+            </div>
+          </div>
+          <p class="footer-description">
+            The premier marketplace for high-value salvage, repairable, and project vehicles. Rebuilding value from the chassis up.
+          </p>
+          <div class="footer-socials">
+            <a href="#fb" class="social-btn" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#tw" class="social-btn" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#ln" class="social-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Column 2: Auctions -->
+        <div>
+          <h4 class="footer-heading">Inventory</h4>
+          <ul class="footer-links">
+            <li><a href="#sports" class="footer-link" id="footer-link-sports">Sports & Exotic Coupes</a></li>
+            <li><a href="#suv" class="footer-link" id="footer-link-suvs">SUVs & Light Trucks</a></li>
+            <li><a href="#hybrid" class="footer-link" id="footer-link-hybrids">Electric & Hybrid Series</a></li>
+            <li><a href="#classic" class="footer-link" id="footer-link-classics">Classic Project Cars</a></li>
+            <li><a href="#clearance" class="footer-link" id="footer-link-clearance">Yard Clearance Lots</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Resources -->
+        <div>
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#rules" class="footer-link" id="footer-link-rules">Auction Rules & Guide</a></li>
+            <li><a href="#fees" class="footer-link" id="footer-link-fees">Bidding Fee Calculator</a></li>
+            <li><a href="#shipping-calculator" class="footer-link" id="footer-link-shipping">Transit Price Quote</a></li>
+            <li><a href="#inspection" class="footer-link" id="footer-link-inspections">Certified Inspections</a></li>
+            <li><a href="#help" class="footer-link" id="footer-link-help">Help Desk Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Contact -->
+        <div>
+          <h4 class="footer-heading">Marketplace HQ</h4>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>100 Terminal Drive, Suite 400<br>Fort Lauderdale, FL 33315</span>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>+1 (800) 555-0199</span>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>support@wesellsalvage.com</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 We Sell Salvage. All rights reserved. Registered Salvage Auction Broker.</p>
+        <div class="footer-bottom-links">
+          <a href="#terms" class="footer-link" id="footer-terms">Terms of Service</a>
+          <a href="#privacy" class="footer-link" id="footer-privacy">Privacy Policy</a>
+          <a href="#sitemap" class="footer-link" id="footer-sitemap">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
